@@ -1,0 +1,36 @@
+*{
+    --beige:  beige;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+   
+   
+}
+
+@media (max-width: 768px) {
+    .container {
+      font-weight: bold;
+      color: blueviolet;
+      
+    }
+    .col{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+  }
+  .col{
+    border: 2px;
+   background-color:var(--beige);
+   margin: 0.5%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.btn-warning{
+  width: 100%;
+  display: flow-root;
+}
+  
