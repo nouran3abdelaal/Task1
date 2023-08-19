@@ -1,5 +1,8 @@
 *{
     --beige:  beige;
+    
+   
+    
 }
 .row{
     display: flex;
@@ -10,17 +13,9 @@
    
 }
 
-@media (max-width: 768px) {
-    .container {
-      font-weight: bold;
-      color: blueviolet;
-      
-    }
-    .col{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    
-  }
+
+
+  
   .col{
     border: 2px;
    background-color:var(--beige);
@@ -29,8 +24,66 @@
    justify-content: center;
     align-items: center;
 }
-.btn-warning{
-  width: 100%;
-  display: flow-root;
+.col p {
+  font-size: 300%;
 }
+.button{
+  /* display: flex;
+  justify-content: center; */
+}
+.btn-warning{
+  /* 
+    display: flex; */
+ 
+  position: relative;
+  justify-content: center;
+ display: flex;
+ 
+right: 0;
+  width: 50%;
+  height: fit-content;
+  z-index: 100;
+
+}
+#movingButton {
+  position: absolute;
+  /* top: 50%; */
+  /* left: 0; */
+  width: 100%;
+
+  /* overflow-x: scroll; */
+  transition: transform 0.5s ease;
+}
+
+#movingButton.moving {
+  transform: translateX(100px);
+}
+@media (max-width: 768px) {
+  .container {
+    font-weight: bold;
+    color: blueviolet;
+/*   to enable the scroll
+   overflow-x: scroll;
+     width: max-content;
+      */
+    overflow-x: scroll;
+     width: max-content;
+    
+  }
+  .col p{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      /* font-size: 90% !important; */
+      font-weight: bold;
+      width: max-content;
+      overflow-x: scroll;
+      height: max-content;
+     
+
+  }
+  .col{
+    overflow-x: scroll;
+  }
+
   
+  
+}
