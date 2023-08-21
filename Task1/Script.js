@@ -3,6 +3,7 @@ window.onload = function() {
     console.log("in");
   
     window.addEventListener('scroll', function() {
+      debugger
         console.log(button);
       var button = document.getElementById('movingButton');
       console.log(button);
