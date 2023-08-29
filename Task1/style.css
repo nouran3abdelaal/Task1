@@ -15,9 +15,10 @@
 
 
 
-  .text{
-    font-size: smaller;
-  }
+.text {
+  display: contents;
+  font-size: larger;
+}
   .col{
     border: 2px;
    background-color:var(--beige);
@@ -27,9 +28,10 @@
     align-items: center;
     width: fit-content;
 }
-.col p {
+/* .col p {
   font-size: 300%;
-}
+  
+} */
 .button{
   /* display: flex;
   justify-content: center; */
@@ -70,23 +72,30 @@ right: 0;
      width: max-content;
       */
     overflow-x: scroll;
-     width: max-content;
+     width: 200%;
     
   }
-  .col p{
+  /* .col p{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      /* font-size: 90% !important; */
       font-weight: bold;
       width: max-content;
       overflow-x: scroll;
       height: max-content;
-     
+      display: contents;
+      overflow-wrap: break-word;
 
-  }
-  .col{
+
+  } */
+  /* .col{
     overflow-x: scroll;
-  }
-
+  } */
+  /* .text {
+    display: contents;
+    font-size: smaller;
+  } */
+  /* .text {
+    font-size: large;
+  } */
   
   
 }
@@ -100,7 +109,7 @@ right: 0;
 
 
 
-.container {
+/* .container {
   min-width: 100%;
   width: 100%;
   padding-right: 15px;
@@ -126,14 +135,14 @@ text {
 .col p {
     overflow-wrap: break-word;
     /* font-size: 300%; */
-}
+/*}
 @media (max-width: 768px){
 .col p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* font-size: 90% !important; */
-    font-weight: bold;
+  /*  font-weight: bold;
     width: max-content;
     overflow-x: scroll;
     height: max-content;
 }
-}
+} */
