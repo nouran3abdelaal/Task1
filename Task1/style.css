@@ -1,80 +1,102 @@
-*{
-    --beige:  beige;
-    
-   
-    
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    
-    justify-content: space-evenly;
-   
-   
+* {
+  --beige: beige;
+
+
+
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+
+
+}
+.container{
+  margin-top: 2%;
+  color: #102C57;
+
+}
 
 
 .text {
   display: contents;
-  font-size: larger;
+  font-size: x-large;
 }
-  .col{
-    border: 2px;
-   background-color:var(--beige);
-   margin: 0.5%;
-   display: flex;
-   justify-content: center;
-    align-items: center;
-    width: fit-content;
-}
-/* .col p {
-  font-size: 300%;
-  
-} */
-.button{
-  /* display: flex;
-  justify-content: center; */
-}
-.btn-warning{
-  /* 
-    display: flex; */
- 
-  position: relative;
+
+.col {
+  border: 2px;
+  background-color: var(--beige);
+  margin: 0.5%;
+  display: flex;
   justify-content: center;
- display: flex;
- 
-right: 0;
-  width: 50%;
-  height: fit-content;
-  z-index: 100;
-
+  align-items: center;
+  width: fit-content;
 }
-#movingButton {
-  position: absolute;
-  /* top: 50%; */
-  /* left: 0; */
+
+.body {
+
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.btn-warning {
+
+
+  position: fixed;
+  justify-content: center;
+  background-color: #102C57 !important;
+  color: #F8F0E5;
+  /* display: flex;
+
+
+  right: 0; */
   width: 100%;
-
-  /* overflow-x: scroll; */
-  transition: transform 0.5s ease;
+  /* height: fit-content; */
+  z-index: 100;
 }
 
-#movingButton.moving {
-  transform: translateX(100px);
+.video{
+  min-width: 400px;
+  min-height: 250px;
 }
+.video-title{
+  min-width: 400px;
+
+}
+
+/* .container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: relative; 
+}
+
+button#scrollButton {
+  position: absolute; 
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transition: left 0.3s;
+} */
+
 @media (max-width: 768px) {
   .container {
     font-weight: bold;
-    color: blueviolet;
-/*   to enable the scroll
+    color: #DAC0A3;
+    /*   to enable the scroll
    overflow-x: scroll;
      width: max-content;
       */
     overflow-x: scroll;
-     width: 200%;
-    
+    width: 200%;
+
   }
+  .embed-responsive{
+    min-height: 565px;
+  }
+
   /* .col p{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-weight: bold;
@@ -96,8 +118,8 @@ right: 0;
   /* .text {
     font-size: large;
   } */
-  
-  
+
+
 }
 
 
@@ -140,7 +162,7 @@ text {
 .col p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* font-size: 90% !important; */
-  /*  font-weight: bold;
+/*  font-weight: bold;
     width: max-content;
     overflow-x: scroll;
     height: max-content;
