@@ -86,14 +86,14 @@ button#scrollButton {
     width: 100vw;
   }
   
-  .video {
+  /* .video {
     min-width: 90vw;
   } 
   
    .video-title {
     min-width: 90vw;
   
-  }
+  } */
 
   /* .embed-responsive {
     min-height: 70vh;
